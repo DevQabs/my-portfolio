@@ -145,3 +145,18 @@
   background-position: center;
   margin-left: auto;
 }
+
+/* Steps 진행 dot 색상 변경 */
+.ant-steps .ant-steps-item-process .ant-steps-icon-dot {
+  background: #2ecc71 !important;
+}
+
+/* 완료된 단계(체크 표시) dot 색상 */
+.ant-steps .ant-steps-item-finish .ant-steps-icon-dot {
+  background: #2ecc71 !important;
+}
+
+/* 모든 단계의 커넥터(연결선) 색상 변경 */
+.ant-steps-item-tail::after {
+  background-color: #2ecc71 !important;
+}

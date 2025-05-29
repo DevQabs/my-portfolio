@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Typography, Card } from 'antd';
 import { UserOutlined } from '@ant-design/icons';
 import TypingText from './TypingText';
+import { MdWavingHand } from 'react-icons/md';
 
 const { Title, Text, Paragraph } = Typography;
 
@@ -13,7 +14,7 @@ const Introduction = ({ id }) => {
   });
 
   useEffect(() => {
-    const targetText = 'I Am a Web Developer.';
+    const targetText = 'I am a Web Developer.';
     let currentText = '';
     let timeoutId;
 
