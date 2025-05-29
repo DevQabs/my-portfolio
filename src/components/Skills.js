@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Typography, Tag, Flex, Popover, Progress } from 'antd';
 import { FaReact, FaJava, FaJs, FaDocker } from 'react-icons/fa';
 import { SiApachekafka, SiSpring, SiSpringboot, SiOracle, SiApachetomcat, SiElasticsearch } from 'react-icons/si';
@@ -100,7 +100,7 @@ const conicColors = {
   '100%': '#ffccc7',
 };
 
-const Skills = ({ id }) => {
+function Skills({ id }) {
   return (
     <div id={id} className='section' style={{ marginBottom: '80px' }}>
       <Title level={2}>
@@ -125,6 +125,6 @@ const Skills = ({ id }) => {
       </div>
     </div>
   );
-};
+}
 
 export default Skills;
