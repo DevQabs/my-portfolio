@@ -22,13 +22,13 @@ const tags = {
     icon: <FaJava />,
     color: '#007396',
     content: 'Java',
-    progress: 85,
+    progress: 90,
   },
   react: {
     icon: <FaReact />,
     color: '#61DAFB',
     content: 'React',
-    progress: 75,
+    progress: 70,
   },
   js: {
     icon: <FaJs />,
@@ -41,56 +41,56 @@ const tags = {
     icon: <SiApachekafka />,
     color: '#231F20',
     content: 'Kafka',
-    progress: 65,
+    progress: 75,
   },
   spring: {
     icon: <SiSpring />,
     color: '#6DB33F',
     content: 'Spring',
-    progress: 80,
+    progress: 85,
   },
   springboot: {
     icon: <SiSpringboot />,
     color: '#6DB33F',
     content: 'Spring Boot',
-    progress: 80,
+    progress: 85,
   },
-  tomcat: {
-    icon: <SiApachetomcat />,
-    color: '#F8DC75',
-    content: 'Tomcat',
-    style: { color: '#222' },
-    progress: 75,
-  },
+  // tomcat: {
+  //   icon: <SiApachetomcat />,
+  //   color: '#F8DC75',
+  //   content: 'Tomcat',
+  //   style: { color: '#222' },
+  //   progress: 75,
+  // },
   docker: {
     icon: <FaDocker />,
     color: '#2496ED',
     content: 'Docker',
-    progress: 60,
+    progress: 55,
   },
   oracle: {
     icon: <SiOracle />,
     color: '#F80000',
     content: 'Oracle',
-    progress: 70,
+    progress: 85,
   },
   postgresql: {
     icon: <DiPostgresql />,
     color: '#336791',
     content: 'PostgreSQL',
-    progress: 75,
+    progress: 80,
   },
   redis: {
     icon: <DiRedis />,
     color: '#D82C20',
     content: 'Redis',
-    progress: 65,
+    progress: 80,
   },
   elasticsearch: {
     icon: <SiElasticsearch />,
     color: '#005571',
     content: 'Elasticsearch',
-    progress: 60,
+    progress: 70,
   },
 };
 
@@ -105,7 +105,7 @@ function Skills({ id }) {
     <div id={id} className='section' style={{ marginBottom: '80px' }}>
       <Title level={2}>
         <Text style={{ fontSize: '40px' }}>MY </Text>
-        <Text style={{ color: '#2ECC71', fontSize: '40px' }}>SKILLS</Text>
+        <Text style={{ color: '#1DA1F2', fontSize: '40px' }}>SKILLS</Text>
       </Title>
       <div className='skills-grid'>
         {Object.entries(tags).map(([key, tag]) => (

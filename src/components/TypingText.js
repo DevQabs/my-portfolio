@@ -14,7 +14,7 @@ const TypingText = ({ text, style }) => {
     const typeText = () => {
       if (currentText.length < text.length) {
         currentText += text[currentText.length];
-        setTypingState(prev => ({
+        setTypingState((prev) => ({
           ...prev,
           text: currentText,
           cursorVisible: true,
@@ -22,7 +22,7 @@ const TypingText = ({ text, style }) => {
         }));
         timeoutId = setTimeout(typeText, 100);
       } else {
-        setTypingState(prev => ({
+        setTypingState((prev) => ({
           ...prev,
           isComplete: true,
         }));
@@ -32,7 +32,7 @@ const TypingText = ({ text, style }) => {
 
     const startCursorBlink = () => {
       const blink = () => {
-        setTypingState(prev => ({
+        setTypingState((prev) => ({
           ...prev,
           cursorVisible: !prev.cursorVisible,
         }));
@@ -59,7 +59,7 @@ const TypingText = ({ text, style }) => {
             style={{
               display: typingState.cursorVisible ? 'inline' : 'none',
               marginLeft: '4px',
-              color: '#2ECC71',
+              color: '#1DA1F2',
             }}
           >
             |

@@ -1,12 +1,14 @@
 import React, { useState } from 'react';
-import { Divider, Layout, Anchor, Typography } from 'antd';
+import { Divider, Layout, Anchor, Typography, Tooltip } from 'antd';
 import { UserOutlined, CodeOutlined, BookOutlined, FileTextOutlined } from '@ant-design/icons';
 import './styles/App.css';
 import Introduction from './components/Introduction';
 import Skills from './components/Skills';
 import Projects from './components/Projects';
 import JobDescription from './components/JobDescription';
-import TypingText from './components/TypingText';
+import { FaGithub } from 'react-icons/fa';
+import { RiBloggerFill } from 'react-icons/ri';
+import { FaFilePdf } from 'react-icons/fa';
 
 const { Header, Content, Footer } = Layout;
 const { Title, Text, Paragraph } = Typography;
@@ -32,13 +34,63 @@ function App() {
   return (
     <Layout className='layout'>
       <Header
-        id='ant-layout-header'
-        style={{ zIndex: 1, width: '100%', display: 'flex', alignItems: 'center', height: '64px' }}
+        style={{
+          position: 'fixed',
+          zIndex: 1000,
+          width: '100%',
+          height: '64px',
+          display: 'flex',
+          justifyContent: 'space-between',
+          alignItems: 'center',
+          backgroundColor: '#2E2E2E',
+          boxShadow: '0 2px 8px rgba(0, 0, 0, 0.1)',
+          padding: '0 24px',
+        }}
       >
-        <div className='logo' />
+        <div style={{ display: 'flex', alignItems: 'center', height: '100%' }}>
+          <img src={require('./assets/images/logo.png')} alt='Logo' style={{ height: '40px', marginRight: '16px' }} />
+          <h1
+            style={{
+              margin: 0,
+              color: '#fff',
+              fontSize: '20px',
+              fontWeight: 600,
+              letterSpacing: '-0.5px',
+            }}
+          >
+            자기소개서
+          </h1>
+        </div>
+        <div style={{ display: 'flex', alignItems: 'center', gap: '16px' }}>
+          <Tooltip placement='top' color='red' title={'자기 소개서'}>
+            <a href='' target='_blank' rel='noopener noreferrer' style={{ display: 'flex', alignItems: 'center' }}>
+              <FaFilePdf size={22} color='#fff' />
+            </a>
+          </Tooltip>
+          <Tooltip placement='top' color='blue' title={'깃허브'}>
+            <a
+              href='https://github.com/devqabs'
+              target='_blank'
+              rel='noopener noreferrer'
+              style={{ display: 'flex', alignItems: 'center' }}
+            >
+              <FaGithub size={22} color='#fff' />
+            </a>
+          </Tooltip>
+          <Tooltip placement='top' color='orange' title={'블로그'}>
+            <a
+              href='https://always-intern.tistory.com/'
+              target='_blank'
+              rel='noopener noreferrer'
+              style={{ display: 'flex', alignItems: 'center' }}
+            >
+              <RiBloggerFill size={22} color='#fff' />
+            </a>
+          </Tooltip>
+        </div>
       </Header>
 
-      <Content style={{ padding: '0 24px', marginTop: 64 }}>
+      <Content style={{ padding: '24px', paddingTop: '88px' }}>
         <div
           style={{
             display: 'flex',
@@ -85,6 +137,7 @@ function App() {
             }}
           >
             <Anchor
+              targetOffset={64}
               direction='vertical'
               style={{ padding: '0 16px', opacity: isHovered ? 1 : 0, transition: 'opacity 0.2s ease' }}
               items={items.map((item) => ({
@@ -96,7 +149,9 @@ function App() {
                     <span style={{ marginLeft: 8 }}>{item.title}</span>
                   </div>
                 ),
-                onClick: () => {
+                onClick: (e) => {
+                  e.preventDefault(); // a 태그의 기본 이동 막기
+
                   const element = document.getElementById(item.key);
                   if (element) {
                     element.scrollIntoView({ behavior: 'smooth' });
