@@ -183,7 +183,20 @@ function App() {
         </div>
       </Content>
 
-      <Footer style={{ textAlign: 'center', height: '500px' }}></Footer>
+      <Footer style={{ textAlign: 'center', backgroundColor: '#2E2E2E', color: '#fff', height: '100px' }}>
+        <small>© 2025 김태국. All rights reserved.</small>
+        <div>
+          <a href='mailto:devqabs@gmail.com'>devqabs@gmail.com</a> |
+          <a href='https://github.com/devqabs' target='_blank'>
+            GitHub
+          </a>{' '}
+          |
+          <a href='https://www.linkedin.com/in/taeguk-kim-619283170/' target='_blank'>
+            LinkedIn
+          </a>
+        </div>
+        <p>이 사이트는 React로 Ant UI를 사용하여 제작되었습니다.</p>
+      </Footer>
     </Layout>
   );
 }
