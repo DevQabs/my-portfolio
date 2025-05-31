@@ -58,9 +58,12 @@ const Introduction = ({ id }) => {
   }, []);
 
   return (
-    <div id={id} style={{ display: 'flex', alignItems: 'center', gap: '24px', marginBottom: '80px' }}>
+    <div
+      id={id}
+      style={{ display: 'flex', alignItems: 'center', gap: '24px', paddingTop: '24px', marginBottom: '80px' }}
+    >
       <div>
-        <Title level={2} style={{ color: '#2ECC71', fontSize: '40px' }}>
+        <Title level={2} style={{ color: '#1DA1F2', fontSize: '40px' }}>
           HI THERE,
         </Title>
         <Text type='secondary' style={{ fontSize: '64px' }}>
@@ -71,7 +74,7 @@ const Introduction = ({ id }) => {
                 style={{
                   display: typingState.cursorVisible ? 'inline' : 'none',
                   marginLeft: '4px',
-                  color: '#2ECC71',
+                  color: '#1DA1F2',
                 }}
               >
                 |
