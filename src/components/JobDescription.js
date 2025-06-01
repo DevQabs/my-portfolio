@@ -3,13 +3,14 @@ import { Typography, Card } from 'antd';
 import bookImage from '../assets/images/book.png';
 import rulesImage from '../assets/images/rule.png';
 import pdfImage from '../assets/images/pdf.png';
+import introductionPdf from '../assets/pdf/introduction.pdf';
 
 const { Title, Text } = Typography;
 const { Meta } = Card;
 
 const JobDescription = ({ id }) => {
   return (
-    <div id={id} className='section' style={{ marginBottom: '80px' }}>
+    <div id={id} className='section' style={{ marginBottom: '80px', height: '650px' }}>
       <Title level={2}>
         <Text style={{ fontSize: '40px' }}>MY </Text>
         <Text style={{ color: '#1DA1F2', fontSize: '40px' }}>INTRODUCTION</Text>
@@ -30,20 +31,21 @@ const JobDescription = ({ id }) => {
         <Card
           hoverable
           style={{
-            width: 300,
+            width: 220,
             cursor: 'pointer',
           }}
-          cover={<img alt='Books' src={pdfImage} style={{ objectFit: 'contain', height: '200px' }} />}
+          cover={<img alt='Books' src={pdfImage} style={{ objectFit: 'contain', height: '120px' }} />}
+          onClick={() => window.open(introductionPdf, '_blank')}
         >
-          <Meta title='PDF' description={<Text>저를 소개하는 간략한 PDF입니다.</Text>} />
+          <Meta title='자기소개서' description={<Text>저를 소개합니다.</Text>} />
         </Card>
         <Card
           hoverable
           style={{
-            width: 300,
+            width: 220,
             cursor: 'pointer',
           }}
-          cover={<img alt='Books' src={bookImage} style={{ objectFit: 'contain', height: '200px' }} />}
+          cover={<img alt='Books' src={bookImage} style={{ objectFit: 'contain', height: '120px' }} />}
           onClick={() =>
             window.open(
               'https://efficient-thyme-595.notion.site/8eaa1ed0a7714c389bdc7b835119e097?v=2b8a89839fed486b8b26a41ba79629bc',
@@ -56,10 +58,10 @@ const JobDescription = ({ id }) => {
         <Card
           hoverable
           style={{
-            width: 300,
+            width: 220,
             cursor: 'pointer',
           }}
-          cover={<img alt='Books' src={rulesImage} style={{ objectFit: 'contain', height: '200px' }} />}
+          cover={<img alt='Books' src={rulesImage} style={{ objectFit: 'contain', height: '120px' }} />}
           onClick={() =>
             window.open(
               'https://efficient-thyme-595.notion.site/Coding-Standards-204430cfe73880c6b391fb8ed939d688',
@@ -67,7 +69,7 @@ const JobDescription = ({ id }) => {
             )
           }
         >
-          <Meta title='Coding Standards' description={<Text>개발 시 필수적으로 지키는 규칙들입니다.</Text>} />
+          <Meta title='Coding Standards' description={<Text>개발 시 지키는 규칙들입니다.</Text>} />
         </Card>
       </div>
     </div>

@@ -27,7 +27,7 @@ const Introduction = ({ id }) => {
           cursorVisible: true,
           isComplete: false,
         }));
-        timeoutId = setTimeout(typeText, 100);
+        timeoutId = setTimeout(typeText, 60);
       } else {
         setTypingState((prev) => ({
           ...prev,

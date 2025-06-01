@@ -9,6 +9,7 @@ import JobDescription from './components/JobDescription';
 import { FaGithub } from 'react-icons/fa';
 import { RiBloggerFill } from 'react-icons/ri';
 import { FaFilePdf } from 'react-icons/fa';
+import introductionPdf from './assets/pdf/introduction.pdf';
 
 const { Header, Content, Footer } = Layout;
 const { Title, Text, Paragraph } = Typography;
@@ -58,12 +59,17 @@ function App() {
               letterSpacing: '-0.5px',
             }}
           >
-            자기소개서
+            Thailand Kim
           </h1>
         </div>
         <div style={{ display: 'flex', alignItems: 'center', gap: '16px' }}>
           <Tooltip placement='top' color='red' title={'자기 소개서'}>
-            <a href='' target='_blank' rel='noopener noreferrer' style={{ display: 'flex', alignItems: 'center' }}>
+            <a
+              href={introductionPdf}
+              target='_blank'
+              rel='noopener noreferrer'
+              style={{ display: 'flex', alignItems: 'center' }}
+            >
               <FaFilePdf size={22} color='#fff' />
             </a>
           </Tooltip>
@@ -186,11 +192,11 @@ function App() {
       <Footer style={{ textAlign: 'center', backgroundColor: '#2E2E2E', color: '#fff', height: '100px' }}>
         <small>© 2025 김태국. All rights reserved.</small>
         <div>
-          <a href='mailto:devqabs@gmail.com'>devqabs@gmail.com</a> |
+          <a href='mailto:devqabs@gmail.com'>devqabs@gmail.com</a> &nbsp;|&nbsp;
           <a href='https://github.com/devqabs' target='_blank'>
             GitHub
-          </a>{' '}
-          |
+          </a>
+          &nbsp; | &nbsp;
           <a href='https://www.linkedin.com/in/taeguk-kim-619283170/' target='_blank'>
             LinkedIn
           </a>
