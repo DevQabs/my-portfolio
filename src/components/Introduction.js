@@ -89,7 +89,7 @@ const Introduction = ({ id }) => {
             <Text type='default' style={{ fontSize: '20px' }}>
               웹개발팀 리더로 더존비즈온에서 근무하고 있으며 주로 백엔드를 담당하고 있습니다.
               <br />
-              경력은 7년 9개월로 여행하는 것을 좋아합니다.
+              9년차로 항상 제 프로젝트에 자부심을 느낄 수 있도록 책임감을 가지고 개발하고 있습니다.
             </Text>
           </blockquote>
         </Paragraph>
