@@ -39,15 +39,17 @@ const Projects = ({ id }) => {
                 <Title level={5}>위하고 헬스케어 플랫폼 구축 (23.07 ~ ) [팀장 / 선임]</Title>
                 1. MSA 아키텍처 설계 및 구축
                 <br />
-                2. Elasticsesarch를 활용한 텍스트 검색 기능 제공
+                2. Kafka CDC 및 Apache Flink를 활용한 실시간 통계용 데이터 집계
                 <br />
-                3. TDD를 활용한 테스트 주도개발
+                3. Elasticsearch 구축 후 검색 및 오류 수집 등의 기능 구현
                 <br />
-                4. Docker / Kubernetes 를 활용한 로컬 개발환경 구축
+                4. 플랫폼 내 Backend 관련 공통 기능 및 프로세스 개발
                 <br />
-                5. Spring 및 Java 버전 업데이트 및 코드 마이그레이션
+                5. Agile sprint 방식을 활용한 개발 업무 진행
                 <br />
-                6. Sonarqube를 활용한 코드관리 및 품질 개선
+                6. TDD 주도 개발 및 코드리뷰를 통한 부서 내 서비스 코드들의 주도적인 코드 품질 개선
+                <br />
+                7. EMR 업무에 대한 전반적인 도메인 이해
               </p>
             </div>
           </div>
@@ -80,23 +82,15 @@ const Projects = ({ id }) => {
             <div>
               <Title level={5}>필리핀 국세청 조세 프로젝트 구축 (21.01 ~ 23.06) [팀장 / 주임]</Title>
               <p>
-                1. MSA 아키텍처 구축
+                1. MSA 아키텍처 구축 (API Gateway, Nexus, Redis 등의 서버 구축)
                 <br />
-                2. React, SpringBoot & JPA 및 Oracle 을 활용한 웹 서비스 구축
+                2. 필리핀 내 대기업 조세 수집용 Open API 및 Jar 파일 공유
                 <br />
-                3. Redis 를 활용한 캐시 관리
+                3. Kafka를 활용한 대규모 데이터 처리 시스템 구축 (평균 일 2억 5천만건)
                 <br />
-                4. 타회사의 대규모 세금관련 데이터 전송을 위한 Open API 구축
+                4. 글로벌 개발자들과 의사소통
                 <br />
-                5. 공통 라이브러리 및 API 개발 및 Nexus를 활용한 버전관리 시스템 구축
-                <br />
-                6. AWS S3를 활용한 파일관리 기능 생성
-                <br />
-                7. Nutanix 서버를 활용한 서버관리
-                <br />
-                8. Kafka를 활용한 대규모 데이터 처리 시스템 구축 (평균 일 2억 5천만건)
-                <br />
-                9. API Gateway 구축
+                5. 조세 업무에 대한 도메인 이해
               </p>
             </div>
           </div>
@@ -133,7 +127,9 @@ const Projects = ({ id }) => {
                 <br />
                 2. React 및 Spring, Postgresql을 활용
                 <br />
-                3. 서비스 성능 개선
+                3. MSA 아키텍처에 대한 전반적인 학습
+                <br />
+                4. 서비스 성능 개선
               </p>
             </div>
           </div>
@@ -152,9 +148,13 @@ const Projects = ({ id }) => {
                 현대종합특수강 MES / SCM 품질 시스템 구축 및 유지보수(17.04 ~ 20.01) [팀원 / 대리]
               </Title>
               <p>
-                1. Java, jsp, mybatis, Xplatform 등을 활용한 고객사 시스템 개발 및 유지보수
+                1. SCM(포항) / MES (중국) 시스템 구축 (품질 시스템)
                 <br />
-                2. SCM / MES 및 제조 관련 IT 시스템 구축 및 운영 경험을 통한 제조 비지니스에 대한 도메인 이해
+                2. Java 1.6, oracle, Xplatform 등 사용
+                <br />
+                3. Procedure 및 Function을 주로 활용하여 개발 업무 수행
+                <br />
+                4. 제조 비지니스에 대한 도메인 이해
               </p>
             </div>
           </div>
