@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/my-portfolio/static/css/main.2ba952cb.css",
-    "main.js": "/my-portfolio/static/js/main.aaf0c0e3.js",
+    "main.css": "/my-portfolio/static/css/main.36b058c4.css",
+    "main.js": "/my-portfolio/static/js/main.be3f6f70.js",
     "static/js/453.acca0757.chunk.js": "/my-portfolio/static/js/453.acca0757.chunk.js",
-    "static/media/profile.jpg": "/my-portfolio/static/media/profile.21490bf62f73430d783a.jpg",
     "static/media/logo.png": "/my-portfolio/static/media/logo.31f343943f8a8ae70c91.png",
-    "static/media/introduction.pdf": "/my-portfolio/static/media/introduction.6e5e4bb9bd32017f6bfb.pdf",
+    "static/media/introduction.pdf": "/my-portfolio/static/media/introduction.b11fdd8bfc231f391b75.pdf",
+    "static/media/profile.jpeg": "/my-portfolio/static/media/profile.4656d3f42b099ee5a933.jpeg",
     "static/media/rule.png": "/my-portfolio/static/media/rule.d0b5be13feeb6ebfed2f.png",
     "static/media/bir_logo.png": "/my-portfolio/static/media/bir_logo.d982071bfe617874a59c.png",
     "static/media/pdf.png": "/my-portfolio/static/media/pdf.61f9fe3633544e38c3bf.png",
     "static/media/wehagoh_logo.svg": "/my-portfolio/static/media/wehagoh_logo.00e4a622bece75bd4367f7fb446f39a1.svg",
     "index.html": "/my-portfolio/index.html",
-    "main.2ba952cb.css.map": "/my-portfolio/static/css/main.2ba952cb.css.map",
-    "main.aaf0c0e3.js.map": "/my-portfolio/static/js/main.aaf0c0e3.js.map",
+    "main.36b058c4.css.map": "/my-portfolio/static/css/main.36b058c4.css.map",
+    "main.be3f6f70.js.map": "/my-portfolio/static/js/main.be3f6f70.js.map",
     "453.acca0757.chunk.js.map": "/my-portfolio/static/js/453.acca0757.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.2ba952cb.css",
-    "static/js/main.aaf0c0e3.js"
+    "static/css/main.36b058c4.css",
+    "static/js/main.be3f6f70.js"
   ]
 }
