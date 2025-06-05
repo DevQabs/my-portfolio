@@ -137,10 +137,10 @@
 /* Profile picture styles */
 .profile-picture {
   width: 240px;
-  height: 240px;
+  height: 280px;
   background: #fff; /* 기본 배경색 */
   border-radius: 10%;
-  background-image: url('../../public/images/profile.jpg'); /* 프로필 사진 경로 */
+  background-image: url('../../public/images/profile.jpeg'); /* 프로필 사진 경로 */
   background-size: cover;
   background-position: center;
   margin-left: auto;
